@@ -7,19 +7,25 @@ function crypto(userInput) {
   let i = 0;
   let e = 0;
 
+  console.log(sideLength);
   for (const letter of userInput) {
+    //console.log("in");
     if (i < sideLength) {
-      arrayInput[i] = letter;
+      arrayInput.push(letter);
       i++; 
+      console.log(arrayInput);
     } else if (e < sideLength) {
-      arrayInput2[e] = arrayInput;
+      arrayInput2.push(arrayInput);
       arrayInput = [];
       e++;
       i = 0;
+      console.log(arrayInput2);
+      console.log(e);
     } else {
+      console.log("out");
       break;
     }
-    console.log(arrayInput2);
+    console.log("out");
   }
 
   // Length i = 0 
