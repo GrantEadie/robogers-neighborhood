@@ -1,7 +1,4 @@
-TDD: 
-
-[] find square size for message
-      square root the message length, round up
-      use the rounded number as the side length of square.
-
-[]  
+* SPECS
+      *     the program returns a range of numbers between 0 and the user's unputted number.
+            * INPUT- 4
+            * OUTPUT- "0, 1, 2, 3, 4"
