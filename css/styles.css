@@ -38,12 +38,13 @@ body {
     transform: translate(-50%, -50%) }
 
 .circle {
-    width: 700px;
-    height: 700px;
-    margin: 20px;
-    shape-outside: circle();
-    clip-path: circle();
-    background: lightblue;
+  width: 250px;
+  height: 250px;
+  background-color: #40a977;
+  border-radius: 50%;
+  float: left;
+  shape-outside: circle( 5px at 30% 70%);
+  -webkit-shape-outside: circle();
 }
   
 
