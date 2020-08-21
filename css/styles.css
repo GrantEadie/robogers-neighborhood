@@ -2,6 +2,13 @@
   border-radius: 0 !important;
 }
 
+.vg{
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+}
+
 #output{
+  margin: 0 auto;
   width: 300px;
+  font-family: 'Press Start 2P', cursive;
 }
