@@ -27,6 +27,6 @@ $(document).ready(function() {
       event.preventDefault();
     let userInput = $("input#userInput").val();
     let result = robogers(userInput);
-    $("#output").text(result);
+    $($("#output").text(result)).fadeIn(1000);
   });
 });
