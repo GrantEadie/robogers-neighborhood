@@ -1,8 +1,9 @@
 function robogers(userInput) {
-    let array = []
-    for (let i = 0; i < userInput; i++){
+    let array = [];
+    for (let i = 0; i <= userInput; i++){
       array.push(i);
     }
+    return array;
 }
 
 
