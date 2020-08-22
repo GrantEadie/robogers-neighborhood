@@ -6,19 +6,34 @@ function robogers(userInput) {
     let lastArray = [];
     for (let i = 0; i <= userInput; i++){
       array.push(i.toString());
-      newArray.push(((array[i]).split(''))[0]);
-      if (newArray[i] === "1") {
-        lastArray.push("Beep!");
-      } else if (newArray[i] === "2") {
-        lastArray.push("Boop!");
-      } else if (newArray[i] === "3") {
-        lastArray.push("Won't you be my neighbor?");
+    }
+    for (let e = 0; e <= array.length; e++) {
+      if (array[e].includes("3")) {
+        alert("Won't you be my neighbor?");
+      } else if (array[e].includes("2")) {
+        alert('Boop!');
+      } else if (array[e].includes("1")) {
+        alert('Beep!');
       } else {
-        lastArray.push(array[i]);
+        alert(array[e]);
       }
     }
-    return lastArray.join(' ');
   }
+      
+  //     newArray.push(((array[i]).split(''))[0]);
+  //     alert(newArray[i]);
+  //     if (newArray[i] === "3") {
+  //       lastArray.push("Beep!");
+  //     } else if (newArray[i] === "2") {
+  //       lastArray.push("Boop!");
+  //     } else if (newArray[i] === "1") {
+  //       lastArray.push("Won't you be my neighbor?");
+  //     } else {
+  //       lastArray.push(array[i]);
+  //     }
+  //   }
+  //   return lastArray.join(' ');
+  // }
 
 // Interface
 
