@@ -7,17 +7,19 @@ function robogers(userInput) {
     for (let i = 0; i <= userInput; i++){
       array.push(i.toString());
     }
-    for (let e = 0; e <= array.length; e++) {
-      if (array[e].includes("3")) {
-        alert("Won't you be my neighbor?");
+    for (let e = 0; e < array.length; e++) {
+      if ((array[e]).includes("3")) {
+        newArray.push("Won't you be my neighbor?");
       } else if (array[e].includes("2")) {
-        alert('Boop!');
+        newArray.push('Boop!');
       } else if (array[e].includes("1")) {
-        alert('Beep!');
+        newArray.push('Beep!');
       } else {
-        alert(array[e]);
+        newArray.push(array[e]);
       }
     }
+    console.log(newArray);
+    return newArray.join(' ');
   }
       
   //     newArray.push(((array[i]).split(''))[0]);
