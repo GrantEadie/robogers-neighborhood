@@ -28,4 +28,7 @@ $(document).ready(function() {
     let result = robogers(userInput);
     $($("#output").text(result)).fadeIn(1000);
   });
+  $("#reset").click(function() {
+    location.reload();
+  });
 });
